@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http:/www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Author List</h1>
+<table>
+    <tr>
+        <td>ID</td>
+        <td>first name</td>
+        <td>last name</td>
+    </tr>
+    <tr th:each="author:${authors}"> <!-- author from controller attribute name   -->
+        <td th:text="${author.id}">456</td>
+        <td th:text="${author.firstName}">abebe</td>
+        <td th:text="${author.lastName}">kebede</td>
+
+    </tr>
+</table>
+
+</body>
+</html>
